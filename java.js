@@ -59,7 +59,27 @@ function renderDati(songsList){
 //CHIAMO LA FUNZIONE DELLA FETCH CHE CONTIENE ALL INTERNO LA CONCATENAZIONE CON LA FUNZIONE CHE VISUALIZZA A SCHERMO LE CANZONI
 recuperaDati()
     //.then(songsList => console.log(songsList))
-    .then(songsList => renderDati(songsList) )
+    .then(songsList => renderDati(songsList))
     .catch(err => console.log(err))
 
+  
 
+//FUNZIONE INSERIEMNTO TESTO NEL MODALE
+function inserireText(songsList){
+  const modalText = document.getElementById("modal-body")
+
+
+  for (const data of songsList.data){
+    const newLi = document.createElement("li")
+    newLi.innerText = `${data.title}`
+
+    modalText.appendChild(newLi)
+
+  }
+}
+
+recuperaDati()
+  .then(songsList => {
+    inserireText(songsList); // Chiamata della funzione
+  })
+  .catch(err => console.log(err));

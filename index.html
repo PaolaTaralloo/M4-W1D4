@@ -91,40 +91,71 @@
           <div class="col-10">
             <div id="eminem" class="d-none">
               <h2>Eminem</h2>
+              <!-- Button trigger modal -->
+              <button type="button" class=" btn btn-close btn-success mb-3" data-toggle="modal" data-target="#exampleModal">
+                Scopri le canzoni
+            </button>
+            
               <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="eminemSection">
               </div>
             </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-10">
-          <div id="metallica" class="d-none">
-            <h2>Metallica</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="metallicaSection">
+        <div class="row">
+          <div class="col-10">
+            <div id="metallica" class="d-none">
+              <h2>Metallica</h2>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="metallicaSection">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <div id="queen" class="d-none">
+              <h2>Queen</h2>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="queenSection">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <div id="found" class="d-none">
+              <h2>Search results</h2>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="searchSection">
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-10">
-          <div id="queen" class="d-none">
-            <h2>Queen</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="queenSection">
+
+      <!--START MODALE-->
+      <!-- Modal -->
+      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content ">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class=" btn btn-close btn-danger bordered d-flex align-items-center p-1"  data-bs-dismiss="modal" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ul id="modal-body">
+
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-10">
-          <div id="found" class="d-none">
-            <h2>Search results</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="searchSection">
-            </div>
-          </div>
-        </div>
-      </div>
+      <!--END MODALE-->
     </div>
-  </div>
   </div>
   <!--END MAIN-->
 
@@ -166,9 +197,12 @@
   </div>
   <!--END NAVBAR BOTTOM-->
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
@@ -177,6 +211,7 @@
     </script>
 
   <script src="java.js"></script>
+
 </body>
 
 </html>
