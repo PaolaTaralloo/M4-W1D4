@@ -229,3 +229,43 @@ ul {
 .mainPage img {
   width: 200px;
 }
+
+
+
+/*CSS CARD*/
+
+.card {
+  background-color: white!important; /* Imposta lo sfondo bianco */
+  margin-bottom: 20px; /* Distanza tra le card */
+  color:#282828;
+
+  overflow: hidden; /* Evita che l'immagine esca dai bordi della card */
+  transition: transform 0.3s ease-in-out; /* Aggiunge una transizione fluida */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta leggermente la dimensione della card al passaggio del mouse */
+}
+
+.card-img-top {
+  width: 100% !important; /* Imposta la larghezza dell'immagine uguale alla larghezza della card */
+  height: auto !important; /* Mantiene le proporzioni dell'immagine */
+  padding: 0.2em;
+
+  transition: transform 0.3s ease-in-out; /* Aggiunge una transizione fluida anche all'immagine */
+}
+
+/* Distanza tra le card all'interno della griglia */
+.row-cols-1, .row-cols-sm-2, .row-cols-lg-3, .row-cols-xl-4 {
+  gap: 4em; /* Distanza tra le card */
+  padding-left: 1em;
+  padding-left: 1em;
+}
+
+.card-title{
+  margin-bottom: 0!important;
+}
+.card-text{
+  color: rgb(152, 152, 152)!important;
+  font-weight: 300;
+}

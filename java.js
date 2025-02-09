@@ -28,14 +28,14 @@ function renderDati(songsList){
 /*----------------------------------------------------------*/
     songsList.data.forEach(song =>{
       const card = document.createElement("div")
-      card.classList.add("card", "nb-3", "bg-transparent", "border-2")
+      card.classList.add("card", "nb-3", "bg-transparent", "border-2", "d-flex")
 
       const img = document.createElement("img")
       img.src = song.album.cover_medium
       img.classList.add("card-img-top")
 
       const cardBody = document.createElement("div")
-      cardBody.classList.add("card-body", "px-0")
+      cardBody.classList.add("card-body", "px-3")
 
       const titleSong = document.createElement("h4")
       titleSong.classList.add("card-title", "fw-bold")
